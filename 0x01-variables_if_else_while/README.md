@@ -1,1 +1,1 @@
-this is a readme for variables if else while
+this is a readme
