@@ -1,17 +1,23 @@
-#include <unistd.h>
-#include <sys/syscall.h>
+#include "main.h"
 
-/*
+/**
  * main - main function
  *
- * Return: 0 when successful
+ * Return: returns 0
  */
- /* function declaration */
-int main(void)
 
-{ 
-const char msg[] = "_putchar\n";
-syscall(SYS_write, 1, msg,
-		sizeof(msg));
-return (0);
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+		
+	return (0);
 }
+
