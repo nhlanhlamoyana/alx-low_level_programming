@@ -1,11 +1,11 @@
 #include "main.h"
 /** 
- * _isdigit - checks for a digit
+ * _isdigit - checks for a digit 0 through 9
  * @c: checks function parameter
- * Return: 1 when successful
+ * Return: 1 when successful and 0 when failed
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
 if (c >= 48 && c <= 57)
 	return (1);
