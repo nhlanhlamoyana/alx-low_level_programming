@@ -1,1 +1,1 @@
-this is a functions pointers readme
+this is a function pointers readme
