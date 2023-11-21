@@ -37,7 +37,7 @@ int op_sub(int a, int b)
  */
 int op_mul(int a, int b)
 {
-	return (a x b);
+	return (a * b);
 }
 /**
  * op_div - the division of two numbers to be returned
