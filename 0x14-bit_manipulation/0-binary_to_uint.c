@@ -6,30 +6,18 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ui;
-	int lrn, base_two;
+	int alx;
+	unsigned int nhlanhla = 0;
+
 
 	if (!b)
 		return (0);
-
-	ui = 0;
-
-	for (len = 0; b[len] != '\0'; len++)
-		;
-
-	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	for (alx = 0; b[alx]; alx++)
 	{
-		if (b[len] != '0' && b[len] != '0' && b[len] != '1')
-		{
+		if (b[alx] < '0' || b[alx] > '1')
 			return (0);
-		}
-
-		if (b[len] & 1)
-		{
-			ui += base_two;
-		}
+		nhlanhla = 2 * nhlanhla + (b[alx] - '0');
 	}
-
-	return (ui);
+	return (nhlanhla);
 }
 
